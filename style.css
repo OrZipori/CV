@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,select,input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-size:inherit;
+	   text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+.clear {
+    zoom: 1;
+}
+
+@font-face {
+    font-family: aileron;
+    src: url(Aileron-Heavy.otf);
+}
+
+@font-face {
+    font-family: aileron-thin;
+    src: url(Aileron-Regular.otf);
+}
+
+body {
+  background: #3a536c;
+  font-family: aileron;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+#leftSide {
+  float: left;
+  width: 30%;
+}
+
+#rightSide {
+  width: 69%;
+}
+
+header span {
+  display: inline-block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #3a536c;
+}
+
+header .head {
+  background: #f0f0f0;
+}
+
+header ul {
+  list-style: none;
+  width: 100%;
+}
+
+header ul li {
+  float: left;
+  width: 20%;
+}
+
+header ul li a:hover, .active {
+  background: #fff;
+}
+
+header ul li a {
+  text-decoration: none;
+  display: block;
+  background: #cdcdcd;
+  padding: 5%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: #3a536c;
+}
+
+section {
+  height: 400px;
+  width: 100%;
+  display: none;
+  overflow-y: scroll;
+  position: relative;
+  top: 400px;
+}
+
+.card {
+  width: 96%;
+  font-size: 14px;
+  padding: 2%;
+  border-radius: 5px;
+  border-left: 5px solid #3a536c;
+  background: rgba(238, 238, 238, 0.6);
+  box-sizing: border-box;
+  position: relative;
+  top: 2%;
+  left: 2%;
+  margin-bottom: 1%;
+}
+
+.card .header {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #3a536c;
+  display: block;
+}
+
+th, td {
+  padding: 5px 5px;
+  text-align: left;
+}
+
+.content {
+  background: #fff;
+  height: 400px;
+  overflow: hidden;
+}
+
+.value {
+  font-family: aileron-thin;
+}
+
+ul.list {
+  padding: 5px;
+  word-spacing: 3px;
+  line-height: 26px;
+}
+
+.buttons {
+  float: right;
+  width: 9%;
+}
+
+.buttons a {
+  display: inline-block;
+  margin-right: 3px;
+  text-decoration: none;
+}
+
+.buttons a img {
+  width: 30px;
+  height: 30px;
+  transition: all .2s ease-in-out;
+}
+
+.buttons a img:hover {
+  transform: scale(1.1);
+}
